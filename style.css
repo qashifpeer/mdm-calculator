@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+   
+    width: 120vh;
+    background-color: aqua;
+}
+
+
+
+    
+.upper-box{
+    display: flex;    
+    background-color: blue;
+}
+
+.upper-table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    border-collapse: collapse;
+}
+.upper-table th,td{
+    border: 1px solid black;
+    padding: 0.25rem 0.50rem;
+}
+.upper-table .main-inputs{
+   width: 100%;
+}
+.upper-table .rate-type{
+    width: 50%;
+}
+
+.lower-box{
+    display: flex;
+    flex-direction: row;
+}
+/* **********INPUT TABLE */
+
+.input-table{
+    border: 1px solid black;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+.input-table th,td{
+    border: 1px solid black;
+}
+.input-table .primary-meals,.middle-meals{
+    text-align: center;
+}
+
+/* **********DISPLAY TABLE */
+.display-table{
+    border: 1px solid black;
+    margin-left: 1rem;
+    border-collapse: collapse;
+}
+.display-table th,td{
+    border: 1px solid black;
+}
+
+
+/* **********RICE DETAILS TABLE */
+.rice-details-table{
+    border: 1px solid black;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-collapse: collapse;
+
+}
+.rice-details-table td,th{
+    border: 1px solid black;
+
+}
