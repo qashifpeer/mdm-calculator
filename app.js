@@ -28,8 +28,8 @@ let rateMiddle = 0;
 let riceRatePrimary = 100;
 let riceRateMiddle = 150;
 
-var xxx = prevBalPrimaryRef.value;
-console.log(xxx);
+var prevBalPrimary = prevBalPrimaryRef.value; 
+// console.log(xxx);
 var prevBalMiddle = prevBalMiddleRef.value;
 
 
@@ -113,7 +113,7 @@ function calculateAll()
     middleExpenses(selectedRate,totalMiddleMeals);
     displayOpeningBalance();
     displayIncome();
-    console.log(xxx);
+    console.log(prevBalMiddle);
     
     
     
