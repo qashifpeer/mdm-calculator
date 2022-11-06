@@ -40,6 +40,21 @@
               <td>Income Received(UP)</td>
               <td><input type="text" class="upper-inputs" id="income-middle"></td>
             </tr>
+            <!-- ************************************************************************************************
+            ********************** RICE DETAILS ******************************* -->
+            <tr><th colspan="4">Rice Details</th></tr>
+            <tr>
+              <td>Prev Balance Rice(Pry)</td>
+              <td><input type="text" class="upper-inputs" id="previous-rice-balance-primary"></td>
+              <td>Prev Balance Rice(UP)</td>
+              <td><input type="text" class="upper-inputs" id="previous-rice-balance-middle"></td>
+            </tr>
+            <tr>
+              <td>Rice Lifted(Pry)</td>
+              <td><input type="text" class="upper-inputs" id="rice-lifted-primary"></td>
+              <td>Rice Lifted(UP)</td>
+              <td><input type="text" class="upper-inputs" id="rice-lifted-middle"></td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -514,7 +529,7 @@
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id="display-ob-middle"></td>
+                <td id="display-ob-primary"></td>
               </tr>
               <tr>
                 <td>Income Received</td>
@@ -522,18 +537,18 @@
               </tr>
               <tr>
                 <td>Expenditure For the Month</td>
-                <td id="display-pry-expenditure"></td>
+                <td id="display-expenditure-pry"></td>
               </tr>
               <tr>
                 <td>Balance</td>
-                <td></td>
+                <td id="display-balance-primary"></td>
               </tr>
               <tr>
                 <th>Middle Section Section</th>
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id="display-ob-pry"></td>
+                <td id="display-ob-middle"></td>
               </tr>
               <tr>
                 <td>Income Received</td>
@@ -541,11 +556,11 @@
               </tr>
               <tr>
                 <td>Expenditure For the Month</td>
-                <td id="display-middle-expenditure"></td>
+                <td id="display-expenditure-middle"></td>
               </tr>
               <tr>
                 <td>Balance</td>
-                <td></td>
+                <td id="display-middle-balance"></td>
               </tr>
 
               <!-- Accumulative  -->
@@ -554,19 +569,19 @@
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id=""></td>
+                <td id="display-total-opening-balance"></td>
               </tr>
               <tr>
                 <td>Total Income Received</td>
-                <td></td>
+                <td id="display-total-income"></td>
               </tr>
               <tr>
                 <td>Total Expenditure</td>
-                <td></td>
+                <td id="display-total-expenditure"></td>
               </tr>
               <tr>
                 <td>Closing Balance</td>
-                <td></td>
+                <td id="display-closing-balance"></td>
               </tr>
             </tbody>
           </table>
@@ -578,61 +593,66 @@
                 <th></th>
               </tr>
               <tr>
-                <td>last Bal</td>
-                <td>500g</td>
+                <td>Last Balance (Pry)</td>
+                <td id="display-rice-ob-pry"></td>
               </tr>
               <tr>
                 <td>Rice Lifted</td>
-                <td>0.00kg</td>
+                <td id="display-rice-lifted-pry"></td>
               </tr>
               <tr>
-                <td>Rice Comsumed</td>
-                <td>500kg</td>
+                <td>Rice Consumed</td>
+                <td id="display-rice-consumed-pry"></td>
               </tr>
               <tr>
-                <td>Balance Pry</td>
-                <td>700kg</td>
+                <td>Balance Primary</td>
+                <td id="display-rice-bal-pry"></td>
               </tr>
               <tr>
                 <th colspan="2">Rice Details (Middle)</th>
               </tr>
               <tr>
-                <td>last Bal</td>
-                <td>500g</td>
+                <td>last Bal(Middle)</td>
+                <td id="display-rice-middle-ob"></td>
               </tr>
               <tr>
                 <td>Rice Lifted</td>
-                <td>0.00kg</td>
+                <td id="display-rice-middle-lifted"></td>
               </tr>
               <tr>
                 <td>Rice Consumed</td>
-                <td>500kg</td>
+                <td id="display-rice-middle-consumed"></td>
               </tr>
               <tr>
-                <td>Balance Pry</td>
-                <td>700kg</td>
+                <td>Balance Middle</td>
+                <td id="display-rice-middle-balance"></td>
               </tr>
               <tr>
-                <td>Total Bal Fwd</th>
-                <td>1000</th>
+                <th colspan="2">Accumulative Details</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Opening Balance</th>
+                <td id="display-rice-total-ob"></th>
               </tr>
               <tr>
                 <td>Total Rice Received</th>
-                <td>95.00</th>
+                <td id="display-rice-total-lifted"></th>
               </tr>
               <tr>
                 <td>Total Rice Consumed</th>
-                <td>95.00</th>
+                <td id="display-rice-total-consumed"></th>
               </tr>
               <tr>
                 <th>Closing Balance</th>
-                <th>95.00</th>
+                <th id="display-rice-total-cb"></th>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <button id="btn-submit">Calculate</button>
+      <div class="btn-wrapper">  <button id="btn-submit" class="btn-submit">Calculate</button></div>
+    
     </div>
 
     <script src="/app.js"></script>
