@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.body{
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+.heading{
+    text-align: center;
 }
 
 .container{
     margin: auto;
    
     width: 120vh;
-    background-color: aqua;
+    
 }
 
 
@@ -16,7 +24,7 @@
     
 .upper-box{
     display: flex;    
-    background-color: blue;
+    
 }
 
 .upper-table{
@@ -80,7 +88,7 @@
 }
 
 .btn-wrapper{
-    background-color: blue;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,3 +101,52 @@
     background-color: brown;
     color: antiquewhite;
 }
+
+
+@media only screen and (max-width: 375px) {
+    .container{
+       margin:1rem 0.2rem;
+       
+        width: 55vh;
+        background-image: linear-gradient(to bottom right, rgb(174, 0, 255) , rgb(197, 165, 245));
+    }
+
+    .upper-table{
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0;
+        border-collapse: collapse;
+    }
+    .upper-table th,td{
+        font-size: 0.8em;
+        padding: 0 0.1rem;
+    }
+
+    .input-table .middle-meals, .primary-meals{
+        width: 4rem;
+        
+    }
+
+    .display-table td,th{
+        width: 4rem
+    }
+    .display-table th{
+        font-size: 0.8em;
+    
+    }
+
+    .upper-inputs{
+        width: 6rem;
+    }
+    .display-results{
+        margin: 0.6rem 0.3rem;
+    }
+
+    .rice-details-table td,th{
+        width: 6rem;
+    }
+    .rice-details-table th{
+        font-size: 0.8em;
+    }
+  }
