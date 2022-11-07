@@ -8,14 +8,23 @@
     <title>Welcome To Govt Upper Primary School Warpora</title>
   </head>
   <body>
-    <h1 class="heading">MDM Calculator</h1>
-
+    <nav class="nav">
+      <div class="logo"> MDM <span>Calculator</span>   </div>
+      <div class="developer">
+       <p>Developed By: </p>
+       <p><a href="#">Qashif Peer</a> </p>
+       
+       <div class="guide"><a href="#">Guide</a> </div> 
+      </div>
+    </nav>
+    
     <div class="container">
       <!-- UPPER BOX -->
+      
       <div class="upper-box">
         <table class="upper-table">
           <tbody>
-            
+          
             <tr><td>Rate Type</td>
               <td colspan="3">
               <select id="rate" name="rate" id="" class="rate-type">
@@ -25,35 +34,35 @@
               </select>
             </td></tr>
             <tr>
-              <td colspan="2">Primary</td>
-              <td colspan="2">Middle</td>
+              <th colspan="2">Primary</th>
+              <th colspan="2">Middle</th>
             </tr>
             <tr>
-              <td>opening Balance(Pry)</td>
-              <td><input type="text" class="upper-inputs" id="prev-bal-primary"></td>
-              <td>opening Balance(UP)</td>
-              <td><input type="text" class="upper-inputs" id="prev-bal-middle" ></td>
+              <td>Opening Balance(Pry)</td>
+              <td><input type="number" class="upper-inputs" id="prev-bal-primary"></td>
+              <td>Opening Balance(UP)</td>
+              <td><input type="number" class="upper-inputs" id="prev-bal-middle" ></td>
             </tr>
             <tr>
               <td>Income Received(Pry)</td>
-              <td><input type="text" class="upper-inputs" id="income-primary"></td>
+              <td><input type="number" class="upper-inputs" id="income-primary"></td>
               <td>Income Received(UP)</td>
-              <td><input type="text" class="upper-inputs" id="income-middle"></td>
+              <td><input type="number" class="upper-inputs" id="income-middle"></td>
             </tr>
             <!-- ************************************************************************************************
             ********************** RICE DETAILS ******************************* -->
-            <tr><th colspan="4">Rice Details</th></tr>
+            <tr><th colspan="4">Rice Details-kg</th></tr>
             <tr>
               <td>Prev Balance Rice(Pry)</td>
-              <td><input type="text" class="upper-inputs" id="previous-rice-balance-primary"></td>
+              <td><input type="number" class="upper-inputs" id="previous-rice-balance-primary"></td>
               <td>Prev Balance Rice(UP)</td>
-              <td><input type="text" class="upper-inputs" id="previous-rice-balance-middle"></td>
+              <td><input type="number" class="upper-inputs" id="previous-rice-balance-middle"></td>
             </tr>
             <tr>
               <td>Rice Lifted(Pry)</td>
-              <td><input type="text" class="upper-inputs" id="rice-lifted-primary"></td>
+              <td><input type="number" class="upper-inputs" id="rice-lifted-primary"></td>
               <td>Rice Lifted(UP)</td>
-              <td><input type="text" class="upper-inputs" id="rice-lifted-middle"></td>
+              <td><input type="number" class="upper-inputs" id="rice-lifted-middle"></td>
             </tr>
           </tbody>
         </table>
@@ -73,130 +82,130 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-1"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-1" />
+                  <input type="number" class="middle-meals" placeholder="day-1" />
                 </td>
               </tr>
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-2"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-2" />
+                  <input type="number" class="middle-meals" placeholder="day-2" />
                 </td>
               </tr>
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-3"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-3" />
+                  <input type="number" class="middle-meals" placeholder="day-3" />
                 </td>
               </tr>
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-4"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-4" />
+                  <input type="number" class="middle-meals" placeholder="day-4" />
                 </td>
               </tr>
               <!-- DAY-5 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-5"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-5" />
+                  <input type="number" class="middle-meals" placeholder="day-5" />
                 </td>
               </tr>
               <!-- DAY-6 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-6"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-6" />
+                  <input type="number" class="middle-meals" placeholder="day-6" />
                 </td>
               </tr>
               <!-- DAY-7 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-7"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-7" />
+                  <input type="number" class="middle-meals" placeholder="day-7" />
                 </td>
               </tr>
               <!-- DAY-8 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-8"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-8" />
+                  <input type="number" class="middle-meals" placeholder="day-8" />
                 </td>
               </tr>
               <!-- DAY-9 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-9"
                   />
                 </td>
 
                 <td>
-                  <input type="text" class="middle-meals" placeholder="day-9" />
+                  <input type="number" class="middle-meals" placeholder="day-9" />
                 </td>
               </tr>
               <!-- DAY-10 -->
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-10"
                   />
@@ -204,7 +213,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-10"
                   />
@@ -214,7 +223,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-11"
                   />
@@ -222,7 +231,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-11"
                   />
@@ -231,7 +240,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-12"
                   />
@@ -239,7 +248,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-12"
                   />
@@ -249,7 +258,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-13"
                   />
@@ -257,7 +266,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-13"
                   />
@@ -266,7 +275,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-14"
                   />
@@ -274,7 +283,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-14"
                   />
@@ -283,7 +292,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-15"
                   />
@@ -291,7 +300,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-15"
                   />
@@ -300,7 +309,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-16"
                   />
@@ -308,7 +317,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-16"
                   />
@@ -317,7 +326,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-17"
                   />
@@ -325,7 +334,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-17"
                   />
@@ -334,7 +343,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-18"
                   />
@@ -342,7 +351,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-18"
                   />
@@ -351,7 +360,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-19"
                   />
@@ -359,7 +368,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-19"
                   />
@@ -368,7 +377,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-20"
                   />
@@ -376,7 +385,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-20"
                   />
@@ -385,7 +394,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-21"
                   />
@@ -393,7 +402,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-21"
                   />
@@ -402,7 +411,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-22"
                   />
@@ -410,7 +419,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-22"
                   />
@@ -419,7 +428,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-23"
                   />
@@ -427,7 +436,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-23"
                   />
@@ -436,7 +445,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-24"
                   />
@@ -444,7 +453,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-24"
                   />
@@ -453,7 +462,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-25"
                   />
@@ -461,7 +470,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-25"
                   />
@@ -470,7 +479,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-26"
                   />
@@ -478,7 +487,7 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-26"
                   />
@@ -487,7 +496,7 @@
               <tr>
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="primary-meals"
                     placeholder="day-27"
                   />
@@ -495,20 +504,20 @@
 
                 <td>
                   <input
-                    type="text"
+                    type="number"
                     class="middle-meals"
                     placeholder="day-27"
                   />
                 </td>
               </tr>
               <tr>
-                <td>
+                <th>
                   <p id="display-total-pry-meals">Total Primary</p>
-                </td>
+                </th>
 
-                <td>
+                <th>
                   <p id="display-total-middle-meals">Total Middle</p>
-                </td>
+                </th>
               </tr>
             </tbody>
           </table>
@@ -525,7 +534,7 @@
             </thead>
             <tbody>
               <tr>
-                <th>Primary Section</th>
+                <th colspan="2">Primary Section</th>
               </tr>
               <tr>
                 <td>Opening Balance</td>
@@ -544,7 +553,7 @@
                 <td id="display-balance-primary"></td>
               </tr>
               <tr>
-                <th>Middle Section</th>
+                <th colspan="2">Middle Section</th>
               </tr>
               <tr>
                 <td>Opening Balance</td>
@@ -565,7 +574,7 @@
 
               <!-- Accumulative  -->
               <tr>
-                <th>Accumulative</th>
+                <th colspan="2">Total Expenses</th>
               </tr>
               <tr>
                 <td>Opening Balance</td>
@@ -589,7 +598,7 @@
           <table class="rice-details-table">
             <tbody>
               <tr>
-                <th colspan="2">Rice Details (primary)</th>
+                <th colspan="2">Rice Details (primary)-Kg</th>
                
               </tr>
               <tr>
@@ -597,7 +606,7 @@
                 <td id="display-rice-ob-pry"></td>
               </tr>
               <tr>
-                <td>Rice Lifted</td>
+                <td>Rice Lifted </td>
                 <td id="display-rice-lifted-pry"></td>
               </tr>
               <tr>
@@ -609,7 +618,7 @@
                 <td id="display-rice-bal-pry"></td>
               </tr>
               <tr>
-                <th colspan="2">Rice Details (Middle)</th>
+                <th colspan="2">Rice Details (Middle)-kg</th>
               </tr>
               <tr>
                 <td>last Bal(Middle)</td>
@@ -628,7 +637,7 @@
                 <td id="display-rice-middle-balance"></td>
               </tr>
               <tr>
-                <th colspan="2">Accumulative Details</th>
+                <th colspan="2">Total Rice Details-kg</th>
                 
               </tr>
               <tr>
@@ -644,7 +653,7 @@
                 <td id="display-rice-total-consumed"></th>
               </tr>
               <tr>
-                <th>Closing Balance</th>
+                <th>Closing Balance-kg</th>
                 <th id="display-rice-total-cb"></th>
               </tr>
             </tbody>

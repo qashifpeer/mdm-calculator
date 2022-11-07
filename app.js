@@ -229,7 +229,7 @@ function displayRiceConsumed(pryMeals,middleMeals){
     displayRiceMiddleConsumed.innerHTML = middleRiceConsumed;
 
     let totalRiceConsumed = pryRiceConsumed + middleRiceConsumed;
-    displayRiceAccConsumed.innerText = totalRiceConsumed;
+    displayRiceAccConsumed.innerText = totalRiceConsumed.toFixed(3);
 
     return [pryRiceConsumed,middleRiceConsumed,totalRiceConsumed];
 
@@ -238,13 +238,13 @@ function displayRiceConsumed(pryMeals,middleMeals){
 function displayRiceBalance(riceOpeningBalance,riceLifted,riceConsumed) {
 
     let pryRiceBalance = (Number(riceOpeningBalance[0]) + Number(riceLifted[0]))- Number(riceConsumed[0]);
-    displayRicePryBalance.innerText = pryRiceBalance;
+    displayRicePryBalance.innerText = pryRiceBalance.toFixed(3);
 
     let middleRiceBalance = (Number(riceOpeningBalance[1]) + Number(riceLifted[1]))- Number(riceConsumed[1]);
-    displayRiceMiddleBalance.innerText = middleRiceBalance  ;
+    displayRiceMiddleBalance.innerText = middleRiceBalance.toFixed(3)  ;
 
     let closingBalance = pryRiceBalance + middleRiceBalance;
-    displayRiceAccCb.innerText = closingBalance;
+    displayRiceAccCb.innerText = closingBalance.toFixed(3);
 
 
 
@@ -259,9 +259,9 @@ function calculateAll() {
 
     let primaryExpenses = calculatePrimaryExpenses(selectedRate,totalPrimaryMeals);
     
-    displayPryExpenditure.innerText = primaryExpenses;
+    displayPryExpenditure.innerText = primaryExpenses.toFixed(2);
     let middleExpenses = calculateMiddleExpenses(selectedRate, totalMiddleMeals);
-    displayMiddleExpenditure.innerText = middleExpenses;
+    displayMiddleExpenditure.innerText = middleExpenses.toFixed(2);
 
     let totalOpeningBalance = displayOpeningBalance(prevBalPrimaryRef.value,prevBalMiddleRef.value);
     let totalIncome = displayIncome();
