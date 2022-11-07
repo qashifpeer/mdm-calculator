@@ -13,9 +13,13 @@
 }
 
 .container{
-    margin: auto;
-   
-    width: 120vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: brown; */
     
 }
 
@@ -24,6 +28,8 @@
     
 .upper-box{
     display: flex;    
+    background-color: blueviolet;
+    width: 100%;
     
 }
 
@@ -33,6 +39,7 @@
     margin-right: auto;
     padding: 1rem 0;
     border-collapse: collapse;
+    
 }
 .upper-table th,td{
     border: 1px solid black;
@@ -44,16 +51,23 @@
 .upper-table .rate-type{
     width: 50%;
 }
+/* Lower Box */
 
 .lower-box{
     display: flex;
     flex-direction: row;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 1rem 0; */
+    
 }
 /* **********INPUT TABLE */
 
 .input-table{
     border: 1px solid black;
-    margin-left: auto;
+   
     border-collapse: collapse;
 }
 .input-table th,td{
@@ -66,7 +80,7 @@
 /* **********DISPLAY TABLE */
 .display-table{
     border: 1px solid black;
-    margin-left: 1rem;
+   
     border-collapse: collapse;
 }
 .display-table th,td{
@@ -77,8 +91,8 @@
 /* **********RICE DETAILS TABLE */
 .rice-details-table{
     border: 1px solid black;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    /* margin-left: 1rem; */
+    /* margin-top: 1rem; */
     border-collapse: collapse;
 
 }
@@ -103,18 +117,60 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
     .container{
-       margin:1rem 0.2rem;
-       
-        width: 55vh;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: brown;
         background-image: linear-gradient(to bottom right, rgb(174, 0, 255) , rgb(197, 165, 245));
     }
+    /* Upper-Box */
+    .upper-box{
+        width: 100%;
+    }
+    /* Lower Box */
+    .lower-box{
+        width: 100%;
+    }
+    .lower-box .input-side{
+        /* background-color: black; */
+        width: 45%;
+        
+        margin: 0 0;
+        
+    }
+    .lower-box .input-table{
+        margin: 0 0;
+        table-layout: fixed;
+    }
+
+    .lower-box .display-results{
+        width: 40%;
+        background-color: green;
+        /* margin-left: 0.5rem */
+    }
+
+        .lower-box .display-table{
+            width: 90%;
+            table-layout: fixed;
+
+            /* background-color: yellow; */
+
+        }
+   
+
+/* ********* TO BE STYLED***** */
 
     .upper-table{
         border: 1px solid black;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+        /* margin-left: auto;
+        margin-right: auto; */
         padding: 0 0;
         border-collapse: collapse;
     }
@@ -122,11 +178,11 @@
         font-size: 0.8em;
         padding: 0 0.1rem;
     }
+    /* Input Table */
 
-    .input-table .middle-meals, .primary-meals{
-        width: 4rem;
-        
-    }
+
+
+    
 
     .display-table td,th{
         width: 4rem
@@ -139,10 +195,7 @@
     .upper-inputs{
         width: 6rem;
     }
-    .display-results{
-        margin: 0.6rem 0.3rem;
-    }
-
+    
     .rice-details-table td,th{
         width: 6rem;
     }
