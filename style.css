@@ -83,10 +83,10 @@ table th {
   padding: 1rem 0;
   border-collapse: collapse;
 }
-.upper-table th,
-td {
+.upper-table th,td {
   border: 1px solid black;
   padding: 0.25rem 0.5rem;
+  letter-spacing: .1rem;
 }
 .upper-table td {
   background-color: var(--bg-light-pink);
@@ -95,7 +95,11 @@ td {
   width: 100%;
 }
 .upper-table .rate-type {
-  width: 50%;
+  width: 70%;
+  /* padding: 0 2rem ; */
+  background-color: rgb(62, 75, 75);
+  color: white;
+  font-weight: 700;
 }
 .upper-inputs {
   width: 6rem;
@@ -107,13 +111,15 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 0.5rem;
+  /* margin-top: 0.2rem; */
+  margin: 0.2rem 0.2rem;
 }
 
 .lower-box .input-side {
-  width: 40%;
-  height: 100%;
+  width: 33%;
+  height: 90%;
   margin-right: 0.5rem;
+  
 }
 .lower-box .input-table {
   border: 1px solid black;
@@ -123,11 +129,11 @@ td {
 }
 
 .lower-box .display-results {
-  width: 55%;
+  width: 65%;
 }
 
 .lower-box .display-table {
-  table-layout: fixed;
+  /* table-layout: fixed; */
   width: 100%;
   height: 100%;
   border: 1px solid black;
@@ -137,17 +143,20 @@ td {
   background-color: var(--bg-off-pink);
 }
 
-.display-table th,
-td {
+.display-table th,td {
   border: 1px solid black;
 }
+.output-side{
+  width: 6rem !important;
+
+}
 .lower-box .rice-details-table {
-  table-layout: fixed;
-  width: 90%;
+  /* table-layout: fixed; */
+  width: 100%;
   height: 100%;
   border: 1px solid black;
   border-collapse: collapse;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
 }
 
 .lower-box .rice-details-table td {
@@ -155,7 +164,7 @@ td {
 }
 .lower-box .primary-meals,
 .middle-meals {
-  padding: 0.2rem 0.2rem;
+  padding: 0.1rem 0.1rem;
   color: red;
   width: 100%;
   border: none;
@@ -165,7 +174,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: .3rem 0;
 }
 
 .btn-submit {
@@ -180,6 +189,14 @@ td {
   cursor: pointer;
   background-color: var(--bg-light-pink);
   color: var(--bg-table-head);
+}
+
+#month{
+  width: 100%;
+  /* padding: 0 2rem ; */
+  background-color: rgb(62, 75, 75);
+  color: white;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
