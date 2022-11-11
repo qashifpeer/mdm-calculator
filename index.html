@@ -26,13 +26,30 @@
           <tbody>
           
             <tr><td>Rate Type</td>
-              <td colspan="3">
-              <select id="rate" name="rate" id="" class="rate-type">
+              <td colspan="2">
+              <select id="rate" name="rate" class="rate-type">
                 <option value="0" selected>Select Rate Type</option>
-                <option value="1">New</option>
-                <option value="2">Old</option>
+                <option value="1">New(5.45/8.17))</option>
+                <option value="2">Old(4.97/7.45)</option>
               </select>
-            </td></tr>
+            </td>
+            <td colspan="1">
+              <select id="month" name="rate" id="" class="month">
+                <option value="0" selected>January</option>
+                <option value="2">February</option>
+                <option value="2">March</option>
+                <option value="2">April</option>
+                <option value="2">May</option>
+                <option value="2">June</option>
+                <option value="2">July</option>
+                <option value="2">August</option>
+                <option value="2">September</option>
+                <option value="2">October</option>
+                <option value="2">November</option>
+                <option value="2">December</option>
+              </select>
+            </td>
+          </tr>
             <tr>
               <th colspan="2">Primary</th>
               <th colspan="2">Middle</th>
@@ -538,38 +555,38 @@
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id="display-ob-primary"></td>
+                <td id="display-ob-primary" class="output-side"></td>
               </tr>
               <tr>
                 <td>Income Received</td>
-                <td id="display-income-pry"></td>
+                <td id="display-income-pry" class="output-side"></td>
               </tr>
               <tr>
                 <td>Expenditure For the Month</td>
-                <td id="display-expenditure-pry"></td>
+                <td id="display-expenditure-pry" class="output-side"></td>
               </tr>
               <tr>
                 <td>Balance</td>
-                <td id="display-balance-primary"></td>
+                <td id="display-balance-primary" class="output-side"></td>
               </tr>
               <tr>
                 <th colspan="2">Middle Section</th>
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id="display-ob-middle"></td>
+                <td id="display-ob-middle" class="output-side"></td>
               </tr>
               <tr>
                 <td>Income Received</td>
-                <td id="display-income-middle"></td>
+                <td id="display-income-middle" class="output-side"></td>
               </tr>
               <tr>
                 <td>Expenditure For the Month</td>
-                <td id="display-expenditure-middle"></td>
+                <td id="display-expenditure-middle" class="output-side"></td>
               </tr>
               <tr>
                 <td>Balance</td>
-                <td id="display-middle-balance"></td>
+                <td id="display-middle-balance" class="output-side"></td>
               </tr>
 
               <!-- Accumulative  -->
@@ -578,19 +595,19 @@
               </tr>
               <tr>
                 <td>Opening Balance</td>
-                <td id="display-total-opening-balance"></td>
+                <td id="display-total-opening-balance" class="output-side"></td>
               </tr>
               <tr>
                 <td>Total Income Received</td>
-                <td id="display-total-income"></td>
+                <td id="display-total-income" class="output-side"></td>
               </tr>
               <tr>
                 <td>Total Expenditure</td>
-                <td id="display-total-expenditure"></td>
+                <td id="display-total-expenditure" class="output-side"></td>
               </tr>
               <tr>
                 <td>Closing Balance</td>
-                <td id="display-closing-balance"></td>
+                <td id="display-closing-balance" class="output-side"></td>
               </tr>
             </tbody>
           </table>
@@ -603,38 +620,38 @@
               </tr>
               <tr>
                 <td>Last Balance (Pry)</td>
-                <td id="display-rice-ob-pry"></td>
+                <td id="display-rice-ob-pry"class="output-side"></td>
               </tr>
               <tr>
                 <td>Rice Lifted </td>
-                <td id="display-rice-lifted-pry"></td>
+                <td id="display-rice-lifted-pry"class="output-side"></td>
               </tr>
               <tr>
                 <td>Rice Consumed</td>
-                <td id="display-rice-consumed-pry"></td>
+                <td id="display-rice-consumed-pry"class="output-side"></td>
               </tr>
               <tr>
                 <td>Balance Primary</td>
-                <td id="display-rice-bal-pry"></td>
+                <td id="display-rice-bal-pry"class="output-side"></td>
               </tr>
               <tr>
                 <th colspan="2">Rice Details (Middle)-kg</th>
               </tr>
               <tr>
                 <td>last Bal(Middle)</td>
-                <td id="display-rice-middle-ob"></td>
+                <td id="display-rice-middle-ob" class="output-side"></td>
               </tr>
               <tr>
                 <td>Rice Lifted</td>
-                <td id="display-rice-middle-lifted"></td>
+                <td id="display-rice-middle-lifted" class="output-side"></td>
               </tr>
               <tr>
                 <td>Rice Consumed</td>
-                <td id="display-rice-middle-consumed"></td>
+                <td id="display-rice-middle-consumed" class="output-side"></td>
               </tr>
               <tr>
                 <td>Balance Middle</td>
-                <td id="display-rice-middle-balance"></td>
+                <td id="display-rice-middle-balance" class="output-side"></td>
               </tr>
               <tr>
                 <th colspan="2">Total Rice Details-kg</th>
@@ -642,15 +659,15 @@
               </tr>
               <tr>
                 <td>Opening Balance</th>
-                <td id="display-rice-total-ob"></th>
+                <td id="display-rice-total-ob" class="output-side"></th>
               </tr>
               <tr>
                 <td>Total Rice Received</th>
-                <td id="display-rice-total-lifted"></th>
+                <td id="display-rice-total-lifted" class="output-side"></th>
               </tr>
               <tr>
                 <td>Total Rice Consumed</th>
-                <td id="display-rice-total-consumed"></th>
+                <td id="display-rice-total-consumed" class="output-side"></th>
               </tr>
               <tr>
                 <th>Closing Balance-kg</th>
